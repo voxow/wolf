@@ -1,3 +1,4 @@
+/* Reset y Estilos Base */
 * {
     margin: 0;
     padding: 0;
@@ -83,9 +84,11 @@ header {
     font-size: 1.3rem;
     margin-bottom: 2rem;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 .cta-button {
     background-color: #ff4444;
     color: #fff;
@@ -396,4 +399,107 @@ footer a:hover {
     .payment-icons img {
         height: 25px; /* Smaller size for mobile */
     }
+}
+
+/* Estilos para la sección de combos */
+.combos-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.combos-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.combo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.combo-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.combo-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada para mayor elevación */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para agrandamiento y sombra */
+}
+
+.combo-image:hover img {
+    transform: scale(1.10); /* Agrandamiento del 10% al pasar el cursor */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Sombra aún más pronunciada al hover */
+}
+
+.combo-description {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    padding: 20px;
+}
+
+.combo-description h2 {
+    font-size: 1.8em;
+    color: #ff4d4d;
+    margin-bottom: 10px;
+}
+
+.combo-description p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.combo-description ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.combo-description ul li {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.combo-description p strong {
+    color: #333;
+    font-size: 1.2em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .combo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .combo-description {
+        text-align: center;
+    }
+
+    .combo-description ul {
+        padding-left: 0;
+        list-style-position: inside;
+    }
+}
+
+.category-card a img {
+    transition: transform 0.3s ease;
+}
+
+.category-card a img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
