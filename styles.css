@@ -283,12 +283,17 @@ html {
     right: 20px;
     background-color: #25D366;
     color: #fff;
-    padding: 1rem;
+    width: 70px; /* Increased from 50px to 70px (40% bigger) */
+    height: 70px; /* Increased from 50px to 70px */
     border-radius: 50%;
-    font-size: 2rem;
+    font-size: 2.6rem; /* Increased from 2rem to 2.6rem for the icon */
     text-decoration: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 
 .whatsapp-icon:hover {
